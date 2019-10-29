@@ -6,22 +6,21 @@ This project builds a Depend-on-Docker container for kfctl and kubectl
 ## Interactive
 Start a bash shell in the container. kfctl and kubectl are available.
 
-'''
-run.sh bash
+   run.sh bash
 
-or
+   or
 
-docker run --rm -it iankoulski/kfctl bash
+   docker run --rm -it iankoulski/kfctl bash
 
-or
+   or
 
-docker run --rm -it -v $(pwd)/wd:/wd iankoulski/kfctl bash
-'''
+   docker run --rm -it -v $(pwd)/wd:/wd iankoulski/kfctl bash
+
 
 ## Non-interactive
 Execute a kubectl or kfctl command 
 
-'''
-Example: docker run --rm -v ~/.kube/config:/root/.kube/config iankoulski/kfctl kubectl info
-'''
+
+   Example: docker run --rm -v ~/.kube/config:/root/.kube/config iankoulski/kfctl kubectl info
+
 
